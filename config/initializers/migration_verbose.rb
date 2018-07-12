@@ -1,0 +1,1 @@
+ActiveRecord::Migration.verbose = true
