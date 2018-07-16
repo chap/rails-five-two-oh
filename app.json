@@ -30,4 +30,11 @@
   "buildpacks": [
 
   ]
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "rails test:system"
+      }
+    }
+  }
 }
