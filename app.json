@@ -10,17 +10,17 @@
   "addons": [
 
   ],
-  "buildpacks": [
-    'heroku/ruby',
-    'https://github.com/heroku/heroku-buildpack-chromedriver',
-    'https://github.com/heroku/heroku-buildpack-google-chrome'
-  ],
   "environments": {
     "test": {
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
         "test": "rails test:system"
-      }
+      },
+      "buildpacks": [
+        "heroku/ruby",
+        "https://github.com/heroku/heroku-buildpack-chromedriver",
+        "https://github.com/heroku/heroku-buildpack-google-chrome"
+      ],
     }
   }
 }
