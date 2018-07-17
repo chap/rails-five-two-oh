@@ -8,6 +8,11 @@
       "scripts": {
         "test": "rails test:system"
       }
+      "buildpacks": [
+      { "url": "heroku/ruby" },
+      { "url": "https://github.com/heroku/heroku-buildpack-chromedriver" },
+      { "url": "https://github.com/heroku/heroku-buildpack-google-chrome" }
+      ]
     }
   }
 }
