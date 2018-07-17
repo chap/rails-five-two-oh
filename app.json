@@ -6,6 +6,7 @@
         "heroku-postgresql:in-dyno"
       ],
       "scripts": {
+        "test-setup": "env"
         "test": "rails test:system"
       },
       "buildpacks": [
