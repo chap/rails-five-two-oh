@@ -8,7 +8,7 @@ chrome_bin = ENV.fetch('GOOGLE_CHROME_SHIM', nil)
 
 chrome_opts = chrome_bin ? { "chromeOptions" => { "binary" => chrome_bin } } : {}
 
-Capybara.register_driver :chrome do |app|
+Capybara.register_driver :chrome_shim do |app|
   Capybara::Selenium::Driver.new(
      app,
      browser: :chrome,
@@ -16,7 +16,7 @@ Capybara.register_driver :chrome do |app|
   )
 end
 
-Capybara.javascript_driver = :chrome
+Capybara.javascript_driver = :chrome_shim
 
 # options = Selenium::WebDriver::Firefox::Options.new
 # options.binary = "/path/to/firefox" 
