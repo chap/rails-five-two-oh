@@ -1,18 +1,10 @@
 {
   "name": "rails-five-two-oh",
-  "scripts": {
-  },
-  "env": {
-
-  },
-  "formation": {
-  },
-  "addons": [
-
-  ],
   "environments": {
     "test": {
-      "addons": ["heroku-postgresql:in-dyno"],
+      "addons": [
+        "heroku-postgresql:in-dyno"
+      ],
       "scripts": {
         "test": "rails test:system"
       },
