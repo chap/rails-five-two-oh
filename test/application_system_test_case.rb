@@ -1,6 +1,6 @@
 require "test_helper"
 
-class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
+
   
   
 # Selenium::WebDriver::Chrome.driver_path = ENV['GOOGLE_CHROME_BIN']
@@ -18,6 +18,7 @@ end
 
 Capybara.javascript_driver = :chrome_shim
 
+class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 # options = Selenium::WebDriver::Firefox::Options.new
 # options.binary = "/path/to/firefox" 
 # driver = Selenium::WebDriver.for :firefox, options: options
