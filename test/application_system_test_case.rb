@@ -23,5 +23,5 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 # options.binary = "/path/to/firefox" 
 # driver = Selenium::WebDriver.for :firefox, options: options
 
-  driven_by :selenium, using: :chrome_shim, screen_size: [1400, 1400]
+  driven_by :chrome_shim
 end
