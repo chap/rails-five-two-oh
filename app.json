@@ -1,6 +1,7 @@
 {
   "name": "rails-five-two-oh",
   "scripts": {
+    "postdeploy": "bin/rails db:structure:load"
   },
   "env": {
     "LANG": {
